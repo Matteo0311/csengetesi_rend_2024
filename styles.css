@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Sötét szürke háttér */
+    color: #e0e0e0; /* Világos szürke szöveg */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1e1e1e; /* Sötét pasztell szürke konténer */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #444; /* Sötétszürke táblázat keret */
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333; /* Sötét szürke fejléc háttér */
+    color: #e0e0e0; /* Világos szürke szöveg */
+}
+
+.current-period {
+    background-color: #4caf50; /* Sötét pasztell zöld az aktuális időszakhoz */
+    color: #ffffff; /* Fehér szöveg */
+}
+
+.past-period {
+    background-color: #90caf9; /* Pasztell kék az eltelt időszakokhoz */
+    color: #000000; /* Fekete szöveg */
+}
+
+#date-time-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#date, #weekInfo, #breakInfo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e0e0e0; /* Világos szürke szöveg */
+}
+
+#date {
+    text-align: left;
+}
+
+#weekInfo {
+    text-align: right;
+}
+
+#time {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e0e0e0; /* Világos szürke szöveg */
+    margin-top: 10px;
+}
+
+/* Szünet jelző különleges formázása */
+.break-info {
+    color: #ff4500; /* Narancssárga szín a szünetjelzőhöz */
+    font-weight: bold;
+    font-size: 1.2em; /* Nagyobb betűméret */
+    margin-top: 10px;
+}
+
+/* Villogó effekt az utolsó 5 percben */
+@keyframes flash {
+    0% { background-color: #ffcccb; }
+    50% { background-color: #f4f4f9; }
+    100% { background-color: #ffcccb; }
+}
+
+.flashing {
+    animation: flash 1s infinite;
+}

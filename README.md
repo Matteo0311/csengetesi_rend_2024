@@ -1,2 +1,2 @@
-# baross-orarend-mutato
-Órarend
+# csengetesi rend
+2024-2025

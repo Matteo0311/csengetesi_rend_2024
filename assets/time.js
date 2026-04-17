@@ -9,8 +9,8 @@ function updateDateTime() {
     const formattedTime = now.toLocaleTimeString('hu-HU', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
     const weekType = getWeekType(now);
 
-    dateElement.textContent = `Dátum: ${formattedDate}`;
-    timeElement.textContent = `Idő: ${formattedTime}`;
+    dateElement.textContent = `${formattedDate}`;
+    timeElement.textContent = `${formattedTime}`;
     weekInfoElement.textContent = `„${weekType}”-hét`;
 
     const timeToBreak = getTimeToBreak(now);
